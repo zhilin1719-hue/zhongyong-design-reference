@@ -1,0 +1,4 @@
+.git
+.vercel
+*.log
+__pycache__

@@ -44,3 +44,23 @@ let wechatReady=false;
 if(/MicroMessenger/i.test(navigator.userAgent)){request('/api/wechat/signature/?url='+encodeURIComponent(location.href.split('#')[0])).then(data=>{if(!data.configured)return;const script=document.createElement('script');script.src='https://res.wx.qq.com/open/js/jweixin-1.6.0.js';script.onload=()=>{const config=data.config||data;window.wx.config({debug:false,appId:config.appId,timestamp:config.timestamp,nonceStr:config.nonceStr,signature:config.signature,jsApiList:['updateAppMessageShareData','updateTimelineShareData']});window.wx.ready(()=>{const share={title:document.title,desc:$('meta[name=description]')?.content||'',link:location.href.split('#')[0],imgUrl:$('main img')?.src||''};window.wx.updateAppMessageShareData(share);window.wx.updateTimelineShareData(share);wechatReady=true;});};document.head.append(script);}).catch(()=>{});}
 document.querySelectorAll('[data-share]').forEach(button=>button.addEventListener('click',async()=>{const result=$('[data-share-status]');if(wechatReady){result.textContent='请点击微信右上角菜单，选择分享给朋友或朋友圈。';return;}try{if(!navigator.clipboard?.writeText)throw new Error('unavailable');await navigator.clipboard.writeText(location.href);result.textContent='链接已复制。';}catch{result.textContent='未能复制，请从浏览器地址栏复制页面链接。';}}));
 })();
+
+(() => {
+  'use strict';
+  document.documentElement.classList.add('reveal-ready');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const reveals = [...document.querySelectorAll('.reveal')];
+  if (!reveals.length) return;
+  if (reduced.matches || !('IntersectionObserver' in window)) {
+    reveals.forEach(node => node.classList.add('is-visible'));
+    return;
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: .12, rootMargin: '0px 0px -7% 0px' });
+  reveals.forEach(node => observer.observe(node));
+})();
