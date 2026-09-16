@@ -6,6 +6,14 @@
     {
       "source": "/health/",
       "destination": "/health.json"
+    },
+    {
+      "source": "/api/v1/site-profile/",
+      "destination": "/api/v1/site-profile.json"
+    },
+    {
+      "source": "/api/v1/products/",
+      "destination": "/api/v1/products.json"
     }
   ],
   "headers": [
