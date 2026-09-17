@@ -12,3 +12,4 @@
 @media(max-width:400px){.knowledge-hero-foot span:first-child{display:none}.knowledge-diagram{height:245px}.diagram-orbit{width:170px;height:170px}.diagram-node{font-size:8px}.knowledge-live{font-size:8px}.knowledge-panel-flow{gap:5px;font-size:8px}}
 @media(prefers-reduced-motion:reduce){.knowledge-prompts button{transition:none}}
 .chat-suggestions button{min-height:38px;padding:7px 11px;font-size:11px}.chat-close{min-width:40px;min-height:40px}.chat-privacy{font-size:11px;line-height:1.6}
+.knowledge-demo-note{margin-top:18px;color:#567780;font-size:12px}
