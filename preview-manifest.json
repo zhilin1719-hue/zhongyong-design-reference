@@ -1,7 +1,8 @@
 {
   "mode": "read-only-client-reference-preview",
-  "pages": 54,
+  "pages": 55,
   "content_items": 33,
+  "knowledge_items": 3,
   "public_files": 3,
   "write_features": "disabled"
 }

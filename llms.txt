@@ -5,6 +5,8 @@
 
 ## Official information
 - https://zhilin1719-hue.github.io/zhongyong-design-reference/official-information/
+- https://zhilin1719-hue.github.io/zhongyong-design-reference/knowledge/
+- https://zhilin1719-hue.github.io/zhongyong-design-reference/api/v1/knowledge/
 - https://zhilin1719-hue.github.io/zhongyong-design-reference/api/v1/site-profile/
 - https://zhilin1719-hue.github.io/zhongyong-design-reference/section/about/
 - https://zhilin1719-hue.github.io/zhongyong-design-reference/section/projects/

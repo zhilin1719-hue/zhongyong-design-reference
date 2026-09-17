@@ -14,6 +14,10 @@
     {
       "source": "/api/v1/products/",
       "destination": "/api/v1/products.json"
+    },
+    {
+      "source": "/api/v1/knowledge/",
+      "destination": "/api/v1/knowledge.json"
     }
   ],
   "headers": [
