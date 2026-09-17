@@ -35,7 +35,7 @@ body:has(.demo-notice) .business-rail{top:107px}
 .tech-hero>img{object-position:center center;filter:saturate(1.16) contrast(1.04)}
 .tech-hero .hero-shade{z-index:1;background:linear-gradient(90deg,rgba(3,17,31,.97) 0%,rgba(3,21,35,.86) 33%,rgba(4,24,38,.25) 66%,rgba(4,20,32,.12)),linear-gradient(0deg,rgba(3,17,28,.9),transparent 43%)}
 .hero-matrix{opacity:.33;background-size:62px 62px;mask-image:linear-gradient(90deg,#000,transparent 62%)}
-.hero-scan{opacity:.35}.tech-hero .hero-content{z-index:5;max-width:1040px;padding:clamp(185px,22vh,240px) 7% 155px}
+.tech-hero .hero-content{z-index:5;max-width:1040px;padding:clamp(185px,22vh,240px) 7% 155px}
 .tech-eyebrow{display:inline-flex;align-items:center;gap:12px;color:#9fe7ec!important;letter-spacing:2.5px;font-size:11px}.tech-eyebrow:after{content:"";width:68px;height:1px;background:linear-gradient(90deg,var(--v3-cyan),transparent)}
 .tech-hero h1{max-width:900px;font-size:clamp(58px,6.7vw,105px);line-height:1.17;letter-spacing:-3px;font-weight:650;text-shadow:0 8px 40px rgba(0,10,20,.5)}
 .tech-hero h1 em{color:#58f3e6;background:none;-webkit-text-fill-color:initial;text-shadow:0 0 42px rgba(69,229,226,.24)}

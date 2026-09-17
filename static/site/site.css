@@ -44,7 +44,6 @@ body:has(.tech-hero) .header{position:absolute;top:23px;left:0;right:0;backgroun
 .tech-hero .hero-shade{background:linear-gradient(90deg,rgba(2,14,22,.98) 0%,rgba(2,17,27,.86) 42%,rgba(2,16,25,.25) 76%),linear-gradient(0deg,rgba(2,14,22,.92),transparent 54%)}
 .hero-matrix{position:absolute;inset:0;z-index:1;opacity:.22;background-image:linear-gradient(rgba(88,225,217,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(88,225,217,.13) 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,#000,transparent 75%)}
 .hero-matrix:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 98px,rgba(101,170,255,.1) 99px 100px);animation:matrix-shift 22s linear infinite}
-.hero-scan{position:absolute;z-index:2;left:0;right:0;top:-25%;height:28%;background:linear-gradient(180deg,transparent,rgba(66,232,213,.06),rgba(66,232,213,.22),transparent);mix-blend-mode:screen;animation:scan-pass 9s ease-in-out infinite}
 .tech-hero .hero-content{position:relative;z-index:5;padding:clamp(190px,24vh,250px) 7% 150px;max-width:990px}
 .tech-eyebrow{display:flex!important;align-items:center;gap:13px;color:#9dd9dd!important;font:10px/1.4 Consolas,"Courier New",monospace;letter-spacing:2.3px}
 .tech-eyebrow span{display:grid;place-items:center;width:32px;height:22px;border:1px solid rgba(66,232,213,.45);color:var(--tech-cyan)}
@@ -80,7 +79,7 @@ body:has(.tech-hero) .header{position:absolute;top:23px;left:0;right:0;backgroun
 .page-head{background:#0a2635;color:var(--tech-white);position:relative;overflow:hidden}.page-head:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(75,220,211,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(75,220,211,.07) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(90deg,transparent,#000)}.page-head>*{position:relative;z-index:1}.page-head .breadcrumb,.page-head>p{color:#9bb4bf}.page-head h1,.detail-head h1{font-family:"Microsoft YaHei","PingFang SC",sans-serif;font-weight:500}.detail-head{background:linear-gradient(115deg,#061723,#0b3040);color:var(--tech-white)}.detail-head .breadcrumb,.detail-head .detail-meta{color:#9ab2bd}.button{background:#0a5260;border-color:#177f87}.button:hover{background:#0b6974}.text-link{border-color:#22b8b4}.chat-launch{background:#07313d;border-color:rgba(66,232,213,.58);color:#eafcfa;box-shadow:0 0 26px rgba(36,219,208,.18)}.chat-launch>span{color:var(--tech-cyan)}.chat-header{background:#082a38}.footer{background:#03111b}.footer-links{border-color:#17414b}.footer .eyebrow{color:var(--tech-cyan)}
 
 .reveal{opacity:1;transform:none}.reveal-ready .reveal{opacity:0;transform:translateY(18px);transition:opacity .68s cubic-bezier(.22,1,.36,1),transform .68s cubic-bezier(.22,1,.36,1)}.reveal-ready .reveal.is-visible{opacity:1;transform:none}
-@keyframes matrix-shift{to{transform:translate3d(72px,0,0)}}@keyframes scan-pass{0%,10%{transform:translateY(-20%);opacity:0}35%{opacity:.65}70%,100%{transform:translateY(460%);opacity:0}}@keyframes orbit-turn{to{transform:rotate(360deg)}}@keyframes signal-pulse{50%{opacity:.35;box-shadow:0 0 3px var(--tech-cyan)}}
+@keyframes matrix-shift{to{transform:translate3d(72px,0,0)}}@keyframes orbit-turn{to{transform:rotate(360deg)}}@keyframes signal-pulse{50%{opacity:.35;box-shadow:0 0 3px var(--tech-cyan)}}
 
 @media(max-width:1100px){
   body:has(.tech-hero) .header{top:23px}.navigation{background:#071c28!important;color:var(--tech-white)}.navigation a{border-color:rgba(79,214,209,.17)!important}
@@ -101,4 +100,4 @@ body:has(.tech-hero) .header{position:absolute;top:23px;left:0;right:0;backgroun
 .projects-section .project-grid,.projects-section .content-card{min-width:0}.projects-section .content-card:first-child .card-image{height:auto}.resource-track{max-width:100%}
 @media(max-width:767px){.projects-section .project-grid{grid-template-columns:minmax(0,1fr)}.projects-section .content-card:first-child{grid-row:auto}.projects-section .content-card h3{overflow-wrap:anywhere}}
 @media(max-width:400px){.tech-hero h1{font-size:35px}.hero-protocol{font-size:8px}.hero-data b{font-size:10px}.hero-data span{font-size:9px}.intro-main h2{font-size:28px}}
-@media(prefers-reduced-motion:reduce){.hero-matrix:after,.hero-scan,.orbit,.signal i{animation:none!important}.reveal{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero-matrix:after,.orbit,.signal i{animation:none!important}.reveal{opacity:1;transform:none}}
